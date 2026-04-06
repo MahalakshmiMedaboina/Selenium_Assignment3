@@ -1,6 +1,9 @@
 # Maven build output
 /target/
 
+# TestNG reports
+/test-output/
+
 # Eclipse project files
 .classpath
 .project
