@@ -1,13 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-06T16:02:52 IST" name="Suite" finished-at="2026-04-06T16:02:52 IST" duration-ms="71">
+  <suite started-at="2026-04-06T16:04:44 IST" name="ParallelSuite" finished-at="2026-04-06T16:04:44 IST" duration-ms="234">
     <groups>
+      <group name="regression">
+        <method signature="GroupsDemo.paymentTest()[pri:0, instance:com.test.Week2TestNG.GroupsDemo@7d8995e]" name="paymentTest" class="com.test.Week2TestNG.GroupsDemo"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="GroupsDemo.loginTest()[pri:0, instance:com.test.Week2TestNG.GroupsDemo@7d8995e]" name="loginTest" class="com.test.Week2TestNG.GroupsDemo"/>
+        <method signature="GroupsDemo.logoutTest()[pri:0, instance:com.test.Week2TestNG.GroupsDemo@7d8995e]" name="logoutTest" class="com.test.Week2TestNG.GroupsDemo"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-04-06T16:02:52 IST" name="DataProviderTest" finished-at="2026-04-06T16:02:52 IST" duration-ms="71">
+    <test started-at="2026-04-06T16:04:44 IST" name="ParallelTest" finished-at="2026-04-06T16:04:44 IST" duration-ms="234">
+      <class name="com.test.Week2TestNG.FirstTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.test.Week2TestNG.FirstTest@72967906]" started-at="2026-04-06T16:04:44 IST" name="beforeClass" finished-at="2026-04-06T16:04:44 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.test.Week2TestNG.FirstTest@72967906]" started-at="2026-04-06T16:04:44 IST" name="beforeMethod" finished-at="2026-04-06T16:04:44 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test1()[pri:0, instance:com.test.Week2TestNG.FirstTest@72967906]" started-at="2026-04-06T16:04:44 IST" name="test1" finished-at="2026-04-06T16:04:44 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.test.Week2TestNG.FirstTest@72967906]" started-at="2026-04-06T16:04:44 IST" name="afterMethod" finished-at="2026-04-06T16:04:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.test.Week2TestNG.FirstTest@72967906]" started-at="2026-04-06T16:04:44 IST" name="beforeMethod" finished-at="2026-04-06T16:04:44 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test2()[pri:0, instance:com.test.Week2TestNG.FirstTest@72967906]" started-at="2026-04-06T16:04:44 IST" name="test2" finished-at="2026-04-06T16:04:44 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.test.Week2TestNG.FirstTest@72967906]" started-at="2026-04-06T16:04:44 IST" name="afterMethod" finished-at="2026-04-06T16:04:44 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.test.Week2TestNG.FirstTest@72967906]" started-at="2026-04-06T16:04:44 IST" name="afterClass" finished-at="2026-04-06T16:04:44 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.test.Week2TestNG.FirstTest -->
       <class name="com.test.Week2TestNG.DataProviderDemo">
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.test.Week2TestNG.DataProviderDemo@7c729a55]" started-at="2026-04-06T16:02:52 IST" name="loginTest" data-provider="loginData" finished-at="2026-04-06T16:02:52 IST" duration-ms="11" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.test.Week2TestNG.DataProviderDemo@130d63be]" started-at="2026-04-06T16:04:44 IST" name="loginTest" data-provider="loginData" finished-at="2026-04-06T16:04:44 IST" duration-ms="40" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +64,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.test.Week2TestNG.DataProviderDemo@7c729a55]" started-at="2026-04-06T16:02:52 IST" name="loginTest" data-provider="loginData" finished-at="2026-04-06T16:02:52 IST" duration-ms="2" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.test.Week2TestNG.DataProviderDemo@130d63be]" started-at="2026-04-06T16:04:44 IST" name="loginTest" data-provider="loginData" finished-at="2026-04-06T16:04:44 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,7 +80,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.test.Week2TestNG.DataProviderDemo@7c729a55]" started-at="2026-04-06T16:02:52 IST" name="loginTest" data-provider="loginData" finished-at="2026-04-06T16:02:52 IST" duration-ms="2" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.test.Week2TestNG.DataProviderDemo@130d63be]" started-at="2026-04-06T16:04:44 IST" name="loginTest" data-provider="loginData" finished-at="2026-04-06T16:04:44 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,6 +97,20 @@
           </reporter-output>
         </test-method> <!-- loginTest -->
       </class> <!-- com.test.Week2TestNG.DataProviderDemo -->
-    </test> <!-- DataProviderTest -->
-  </suite> <!-- Suite -->
+      <class name="com.test.Week2TestNG.GroupsDemo">
+        <test-method signature="loginTest()[pri:0, instance:com.test.Week2TestNG.GroupsDemo@7d8995e]" started-at="2026-04-06T16:04:44 IST" name="loginTest" finished-at="2026-04-06T16:04:44 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="logoutTest()[pri:0, instance:com.test.Week2TestNG.GroupsDemo@7d8995e]" started-at="2026-04-06T16:04:44 IST" name="logoutTest" finished-at="2026-04-06T16:04:44 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method signature="paymentTest()[pri:0, instance:com.test.Week2TestNG.GroupsDemo@7d8995e]" started-at="2026-04-06T16:04:44 IST" name="paymentTest" finished-at="2026-04-06T16:04:44 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentTest -->
+      </class> <!-- com.test.Week2TestNG.GroupsDemo -->
+    </test> <!-- ParallelTest -->
+  </suite> <!-- ParallelSuite -->
 </testng-results>

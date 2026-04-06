@@ -8,7 +8,7 @@ public class DataProviderDemo {
 	@Test(dataProvider = "loginData")
     public void loginTest(String username, String password) {
         System.out.println(username + " | " + password);
-       
+        System.out.println("Thread ID: " + Thread.currentThread().getId()); // for parallel execution
     }
 
     @DataProvider

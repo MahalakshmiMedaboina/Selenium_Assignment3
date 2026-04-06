@@ -1,23 +1,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 
- <suite name="Suite">
-	
-   <!-- <test name="Testcase"> -->
-  	<!--  <test name="SmokeTests">
-    
-    	<groups> 
-    		<run>
-    			<include name="smoke"/>  		
-    		</run>
-    	</groups> uncomment this when u want to run smoke tests-->
-    	
-    	<test name="DataProviderTest">
-    	
+<suite name="ParallelSuite" parallel="classes" thread-count="3">
+
+    <test name="ParallelTest">
         <classes>
-           <!-- <class name="com.test.Week2TestNG.FirstTest"/>
-            <class name="com.test.Week2TestNG.GroupsDemo"/> -->
+            <class name="com.test.Week2TestNG.FirstTest"/>
+            <class name="com.test.Week2TestNG.GroupsDemo"/>
             <class name="com.test.Week2TestNG.DataProviderDemo"/>
         </classes>
     </test>
-</suite> 
+
+</suite>

@@ -16,7 +16,7 @@ public class FirstTest {
     @Test
     public void test1() {
         System.out.println("Executing Test 1");
-        
+        System.out.println("Thread ID: " + Thread.currentThread().getId()); // for parallel execution
     }
 
     @Test
