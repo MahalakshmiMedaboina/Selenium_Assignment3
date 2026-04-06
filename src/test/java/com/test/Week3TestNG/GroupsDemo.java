@@ -1,4 +1,4 @@
-package com.test.Week2TestNG;
+package com.test.Week3TestNG;
 import org.testng.annotations.Test;
 
 public class GroupsDemo {
