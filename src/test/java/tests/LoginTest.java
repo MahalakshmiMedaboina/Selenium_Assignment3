@@ -8,7 +8,8 @@ import org.testng.annotations.Test;
 public class LoginTest extends BaseClass{
 	@Test
     public void testLogin() {
-		LoginPage login = new LoginPage(driver);
+//		LoginPage login = new LoginPage(driver);
+		LoginPage login = new LoginPage(getDriver());
 
 //        login.enterUsername("admin");
 //        login.enterPassword("admin123");
