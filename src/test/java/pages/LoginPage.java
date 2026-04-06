@@ -8,43 +8,41 @@ import org.openqa.selenium.support.PageFactory;
 
 
 // here we created: Defined locators and methods
-public class LoginPage {
+//public class LoginPage {
+public class LoginPage extends AbstractComponent{
 
     WebDriver driver;
 
     // Constructor
     public LoginPage(WebDriver driver) {
+    	super(driver); //Calls parent constructor (AbstractComponent)
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
     // Locators
-//    By username = By.id("user-name"); 
-      @FindBy(id="user-name") //instead of above line we write this
+
+      @FindBy(id="user-name") 
       WebElement username;
     
-//    By password = By.id("password");
       @FindBy(id="password")
       WebElement password;
       
-//    By loginBtn = By.id("login-button");
       @FindBy(id="login-button")
       WebElement loginBtn;
 
     // Actions
     public void enterUsername(String user) {
-//        driver.findElement(username).sendKeys(user);
-    	username.sendKeys(user); // we wrote this step instead of above line
+    	username.sendKeys(user);
     }
 
     public void enterPassword(String pass) {
-//        driver.findElement(password).sendKeys(pass);
     	password.sendKeys(pass);
     }
 
     public void clickLogin() {
-//        driver.findElement(loginBtn).click();
-    	loginBtn.click();
+//    	loginBtn.click();
+    	clickElement(loginBtn); //This method comes from AbstractComponent
     	
     }
     public void login(String user, String pass) {
