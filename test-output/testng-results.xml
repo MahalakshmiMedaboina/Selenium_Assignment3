@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-06T14:47:51 IST" name="Suite" finished-at="2026-04-06T14:47:51 IST" duration-ms="56">
+  <suite started-at="2026-04-06T16:02:52 IST" name="Suite" finished-at="2026-04-06T16:02:52 IST" duration-ms="71">
     <groups>
-      <group name="smoke">
-        <method signature="GroupsDemo.loginTest()[pri:0, instance:com.test.Week2TestNG.GroupsDemo@5c5eefef]" name="loginTest" class="com.test.Week2TestNG.GroupsDemo"/>
-        <method signature="GroupsDemo.logoutTest()[pri:0, instance:com.test.Week2TestNG.GroupsDemo@5c5eefef]" name="logoutTest" class="com.test.Week2TestNG.GroupsDemo"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-04-06T14:47:51 IST" name="SmokeTests" finished-at="2026-04-06T14:47:51 IST" duration-ms="56">
-      <class name="com.test.Week2TestNG.GroupsDemo">
-        <test-method signature="loginTest()[pri:0, instance:com.test.Week2TestNG.GroupsDemo@5c5eefef]" started-at="2026-04-06T14:47:51 IST" name="loginTest" finished-at="2026-04-06T14:47:51 IST" duration-ms="10" status="PASS">
+    <test started-at="2026-04-06T16:02:52 IST" name="DataProviderTest" finished-at="2026-04-06T16:02:52 IST" duration-ms="71">
+      <class name="com.test.Week2TestNG.DataProviderDemo">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.test.Week2TestNG.DataProviderDemo@7c729a55]" started-at="2026-04-06T16:02:52 IST" name="loginTest" data-provider="loginData" finished-at="2026-04-06T16:02:52 IST" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass1]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method signature="logoutTest()[pri:0, instance:com.test.Week2TestNG.GroupsDemo@5c5eefef]" started-at="2026-04-06T14:47:51 IST" name="logoutTest" finished-at="2026-04-06T14:47:51 IST" duration-ms="3" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.test.Week2TestNG.DataProviderDemo@7c729a55]" started-at="2026-04-06T16:02:52 IST" name="loginTest" data-provider="loginData" finished-at="2026-04-06T16:02:52 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass2]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logoutTest -->
-      </class> <!-- com.test.Week2TestNG.GroupsDemo -->
-    </test> <!-- SmokeTests -->
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:com.test.Week2TestNG.DataProviderDemo@7c729a55]" started-at="2026-04-06T16:02:52 IST" name="loginTest" data-provider="loginData" finished-at="2026-04-06T16:02:52 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.test.Week2TestNG.DataProviderDemo -->
+    </test> <!-- DataProviderTest -->
   </suite> <!-- Suite -->
 </testng-results>

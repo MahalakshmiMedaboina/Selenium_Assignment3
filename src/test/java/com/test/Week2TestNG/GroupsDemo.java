@@ -5,6 +5,7 @@ public class GroupsDemo {
 	@Test(groups = "smoke")
     public void loginTest() {
         System.out.println("Login Test - Smoke");
+        
     }
 
     @Test(groups = "regression")
