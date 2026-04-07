@@ -1,24 +1,24 @@
 package utilities;
 
 import org.testng.annotations.DataProvider;
+
+import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
+
 
 public class TestDataProvider {
 
-    @DataProvider(name = "loginDataMap")
-    public Object[][] getData() {
+    @DataProvider(name = "jsonData")
+    public Object[][] getJsonDataProvider() throws IOException {
 
-        HashMap<String, String> map1 = new HashMap<>();
-        map1.put("username", "standard_user");
-        map1.put("password", "secret_sauce");
+        String path = System.getProperty("user.dir") + "/testdata/loginData.json";
 
-        HashMap<String, String> map2 = new HashMap<>();
-        map2.put("username", "problem_user");
-        map2.put("password", "secret_sauce");
+        List<HashMap<String, String>> data = JsonUtil.getJsonData(path);
 
         return new Object[][] {
-            { map1 },
-            { map2 }
+            { data.get(0) },
+            { data.get(1) }
         };
     }
 }
