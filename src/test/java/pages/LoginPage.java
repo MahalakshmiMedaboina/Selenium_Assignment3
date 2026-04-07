@@ -46,7 +46,9 @@ public class LoginPage extends AbstractComponent{
     	
     }
     public void login(String user, String pass) {
+    	waitForElement(username);
   	  username.sendKeys(user);
+  	waitForElement(password);
   	  password.sendKeys(pass);
   	  loginBtn.click();
   	}

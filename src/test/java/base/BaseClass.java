@@ -10,7 +10,7 @@ public class BaseClass {
 
     public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-    @BeforeClass
+    @BeforeMethod
     public void setup() {
 
         System.out.println("Launching Browser");
@@ -27,7 +27,7 @@ public class BaseClass {
         driver.get().get("https://www.saucedemo.com/");
     }
 
-    @AfterClass
+    @AfterMethod
     public void teardown() {
 
         System.out.println("Closing Browser");
