@@ -2,21 +2,21 @@ package tests;
 import base.BaseClass;
 import pages.LoginPage;
 
-import org.testng.annotations.Test;
+import java.io.IOException;
 
+import org.testng.annotations.Test;
+import utilities.ScreenshotUtil;
 
 public class LoginTest extends BaseClass{
+	
 	@Test
-    public void testLogin() {
-//		LoginPage login = new LoginPage(driver);
-		LoginPage login = new LoginPage(getDriver());
+	public void testLogin() throws IOException {
 
-//        login.enterUsername("admin");
-//        login.enterPassword("admin123");
-//        login.clickLogin();
-		
-		login.login("standard_user", "secret_sauce");
+	    LoginPage login = new LoginPage(getDriver());
+	    login.login("standard_user", "secret_sauce");
 
-        System.out.println("Login using PageFactory");
-    }
+	    ScreenshotUtil.takeScreenshot(getDriver(), "loginTest");
+	}
+	
+	
 }
