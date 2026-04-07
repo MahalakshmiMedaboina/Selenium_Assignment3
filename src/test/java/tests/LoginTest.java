@@ -31,8 +31,8 @@ public class LoginTest extends BaseClass{
 	    LoginPage login = new LoginPage(getDriver());
 
 	    login.login(data.get("username"), data.get("password"));
-	    
-	    Thread.sleep(5000); // just to see session in Grid, we slowed the execution 
+	    Thread.sleep(5000); 
+	   
 	}
 	
 }

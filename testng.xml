@@ -1,13 +1,12 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GridSuite" parallel="tests" thread-count="2">
 
+    <test name="Test1">
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
 
-<suite name="FrameworkSuite">
-
-	<listeners>
-        <listener class-name="utilities.Listeners"/>
-    </listeners>
-
-    <test name="LoginTestExecution">
+    <test name="Test2">
         <classes>
             <class name="tests.LoginTest"/>
         </classes>

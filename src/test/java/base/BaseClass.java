@@ -16,33 +16,28 @@ public class BaseClass {
     public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     @BeforeMethod
-//    public void setup() {
+
     public void setup() throws Exception {
 
-//        System.out.println("Launching Browser");
     	System.out.println("Launching Browser on Grid");
 
-//        WebDriverManager.chromedriver().setup();
     	DesiredCapabilities cap = new DesiredCapabilities();
         cap.setBrowserName("chrome");   // you can change to firefox, edge
 
 
-//        driver.set(new ChromeDriver());
+
         driver.set(new RemoteWebDriver(
                 new URL("http://localhost:4444"),
                 cap
             ));
 
-//        driver.get().manage().window().maximize();
         
         driver.get().manage().window().maximize();
         driver.get().get("https://www.saucedemo.com/");
 
         // ✅ Implicit Wait added
         WaitUtil.applyImplicitWait(driver.get());
-        System.out.println("Driver Type: " + driver.get().getClass()); // just to see the driver type
-//
-//        driver.get().get("https://www.saucedemo.com/");
+
     }
 
     @AfterMethod
