@@ -3,6 +3,10 @@
 
 <suite name="FrameworkSuite">
 
+	<listeners>
+        <listener class-name="utilities.Listeners"/>
+    </listeners>
+
     <test name="LoginTestExecution">
         <classes>
             <class name="tests.LoginTest"/>
