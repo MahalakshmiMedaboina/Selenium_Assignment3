@@ -26,11 +26,13 @@ public class LoginTest extends BaseClass{
 
 	
 	@Test(dataProvider = "jsonData", dataProviderClass = TestDataProvider.class)
-	public void testLoginJson(HashMap<String, String> data) {
+	public void testLoginJson(HashMap<String, String> data) throws InterruptedException {
 
 	    LoginPage login = new LoginPage(getDriver());
 
 	    login.login(data.get("username"), data.get("password"));
+	    
+	    Thread.sleep(5000); // just to see session in Grid, we slowed the execution 
 	}
 	
 }
