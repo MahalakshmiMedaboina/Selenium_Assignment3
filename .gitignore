@@ -19,3 +19,9 @@
 # OS-specific files
 .DS_Store
 Thumbs.db
+
+#report in index.html
+/reports/
+
+#screenshots
+/screenshots/
